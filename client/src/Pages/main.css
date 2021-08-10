@@ -1,0 +1,97 @@
+body {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    line-height: 1;
+    background: rgb(162,168,170);
+    background: linear-gradient(180deg, rgba(162,168,170,1) 0%, rgba(255,255,255,1) 100%);
+  }
+  
+  textarea{
+    background: transparent;
+    border: none;
+    resize: none;
+    color: #000000;
+    border-left: 1px solid black;
+    padding: 10px;
+  }
+  
+  .jumbotron {
+    text-align: center;
+    background: rgb(248,199,173);
+    background: radial-gradient(circle, rgba(248,199,173,1) 0%, rgba(248,207,185,1) 46%, rgba(247,243,240,1) 100%);
+    color: black;
+    border-radius: 0;
+    border-bottom: 10px solid black;
+  }
+  
+  .col-1{
+    padding-left: unset;
+    padding-right: unset;
+  }
+  
+  .description{
+    white-space: pre-wrap;
+  }
+  
+  .deleteBtn{
+    background: rgb(255,88,88);
+    background: linear-gradient(106deg, rgba(255,88,88,1) 0%, rgba(221,155,155,1) 100%);
+    color: white;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+  }
+  
+  .time-block{
+    text-align: center;
+    border-radius: 15px;
+  }
+  
+  .row {
+    white-space: pre-wrap;
+    border-top: 1px solid white;
+    height: 80px;
+    flex-wrap: unset;
+    margin-left: unset;
+    margin-right: unset;
+    text-align: center;
+  }
+  
+  .hour {
+    background-color: #f8cfb9;
+    color: #000000;
+    border-top: 1px dashed #000000;
+    padding-left: unset;
+  }
+  
+  .past {
+    background-color: #d3d3d3;
+    color: black;
+  }
+  
+  .present {
+    background-color: #ff6961;
+    color: black;
+  }
+  
+  .future {
+    background-color: #77dd77;
+    color: black;
+  }
+  
+  .saveBtn {
+    border-left: 1px solid black;
+    background: rgb(6,174,213);
+    background: linear-gradient(90deg, rgba(6,174,213,1) 0%, rgba(146,191,201,1) 100%);
+    color: white;
+  }
+  
+  .saveBtn i:hover {
+    font-size: 20px;
+    transition: all .3s ease-in-out;
+  }
+  
+  footer{
+    margin-top: 30px;
+    bottom: 100%;
+    border-bottom: 10px solid black;
+  }
