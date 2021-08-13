@@ -36,7 +36,7 @@ function Header() {
             <header className="jumbotron">
                 <h1 className="display-3">Work Day Scheduler</h1>
                 <p className="lead">A simple calendar app for scheduling your work day</p>
-                <p>{current}</p>
+                <p>Today is {current}</p>
             </header>
         </div>
     )
