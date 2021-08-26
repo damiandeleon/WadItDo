@@ -10,17 +10,18 @@ const PORT = process.env.PORT || 8080
 //use morgan to log HTTP request logger to show what routes we're hitting
 app.use(morgan('tiny'));
 
-app.get('/', function (req, res) {
-  res.send('Hello World')
-})
+app.use(experss.json());
+app.use(express.static("public"));
 
-app.get('/api', function (req, res) {
-    const data = {
-        name: "damian",
-        age: 45
-    }
-    res.json(data)
-})
+mongoose.connect("mongodb://localhost/wadItDo", {
+  useNewUrlParser: true,
+  useFindAndModify: false
+});
+
+// routes
+app.use(require("./routes/api.js"));
+
+
  
 app.listen(PORT, function() {
     console.log(`Server is starting at ${PORT}`);
